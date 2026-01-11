@@ -1,0 +1,10 @@
+# WordPress env / secrets
+wp-config.php
+/wp-content/uploads/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
