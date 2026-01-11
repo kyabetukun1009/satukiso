@@ -1,0 +1,66 @@
+main{
+    max-width: 1072px;
+    padding: 0 5px;
+    margin: 50px auto 0;
+}
+.h2{
+    font-size: 35px;
+    color: #211914;
+    margin: 15px 20px;
+}
+.main > strong{
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #211914;
+    font-weight: bold;
+}
+.main > strong> a{
+    color: #276fdb;
+}
+
+
+/* お問い合わせフォーム */
+/* #wpcf7-f10-o1{
+    /* margin: 50px 0;
+} */
+#wpcf7-f10-o1 label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #211914;
+    display: block;
+    margin:40px 0 0;
+}
+
+#wpcf7-f10-o1 input:not([type="checkbox"]),textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #211914;
+    font-size: 25px;
+    padding: 8px 0;
+    z-index: 1;
+}
+
+#wpcf7-f10-o1 input[type="checkbox"]{
+    accent-color: #f00;
+    inline-size: 18px;
+    block-size: 18px;
+}
+
+.wpcf7-list-item{
+    font-size: 20px;
+}
+
+.wpcf7-form p:last-child{
+    margin: 50px 0;
+}
+
+/* @media(max-width:890px) {
+
+} */
+
+@media(max-width:550px) {
+    .main > strong{
+        font-size: 17px;
+   }
+}

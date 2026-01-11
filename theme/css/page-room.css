@@ -1,0 +1,129 @@
+main{
+    max-width: 1072px;
+    padding: 0 5px;
+    margin: 50px auto 0;
+}
+.h2{
+    font-size: 35px;
+    color: #211914;
+    margin: 15px 20px;
+}
+.section{
+    margin: 30px auto 50px;
+}
+.h3{
+    padding: 7px 20px;
+    font-size: 28px;
+    border-bottom: 3px solid #0f0f0f;
+}
+
+/* この辺は共通 */
+.card,.card2{
+    display: flex;
+    padding: 25px 0px 25px;
+    row-gap: 15px;
+}
+.textList{
+    width: calc(100%/2);
+    padding: 10px 15px;
+}
+.textList > strong{
+    border-left: 3px solid #0f0f0f;
+    display: block;
+    padding: 0 10px;
+    font-size: 22px;
+}
+.textList > p{
+    margin: 15px 0 0;
+}
+.image{
+    width: calc(100%/2);
+}
+.lazy,.done{
+    width: 100%;
+    background: #211914;
+}
+.itemList{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 20px 0 20px;
+}
+.itemList li:not(:last-child) p::after{
+    content: "/";
+}
+.itemList li p{
+    font-size: 15px;
+}
+
+/*画像と文字のリストカード*/
+.dataList{
+    padding: 0 5px;
+}
+.dataList li{
+    margin: 15px 0;
+}
+.dataList li p {
+  font-size: 15px;
+}
+.dataList li p strong{
+    font-size: 18px;
+}
+.dataList li p a{
+    color: #276fdb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.number {
+  text-align: center;
+  margin: 50px 0;
+}
+.number p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.number a {
+  font-size: 30px;
+  color: #276fdb;
+}
+
+@media(max-width:890px) {
+    .key li{
+        width: calc((100% - 10px)/2);
+    }
+    .card {
+        flex-direction: column-reverse;
+    }
+    .card2{
+        flex-direction: column;
+    }
+    .textList,.image{
+        width: 100%;
+    }
+    .lazy,.done{
+        aspect-ratio: 16/9;
+        object-fit: contain;
+    }
+}
+
+@media(max-width:550px) {
+    .textList{
+        padding: 0px 5px;
+    }
+    .textList > strong{
+        font-size: 18px;
+    }
+    .itemList li p{
+        font-size: 15px;
+    }
+    .dataList li p {
+        font-size: 15px;
+    }
+    .dataList li p strong {
+        font-size: 17px;
+    }
+    .dataList li p a{
+        font-size: 17px;
+    }
+}
