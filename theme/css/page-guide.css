@@ -1,0 +1,157 @@
+main{
+    max-width: 1072px;
+    padding: 0 5px;
+    margin: 50px auto 0;
+}
+
+.h2{
+    font-size: 35px;
+    color: #211914;
+    margin: 15px 20px;
+}
+.section{
+    margin: 30px auto 50px;
+}
+.h3{
+    padding: 7px 20px;
+    font-size: 28px;
+    border-bottom: 3px solid #0f0f0f;
+}
+.card,.card2{
+    display: flex;
+    padding: 25px 0px 25px;
+    row-gap: 15px;
+}
+.textList{
+    width: calc(100%/2);
+    padding: 10px 15px;
+}
+.side{
+    display: block;
+    padding: 0 10px;
+    border-left: 3px solid #0f0f0f;
+    font-size: 22px;
+}
+/* チェックイン、チェックアウト時間 */
+/* .inOut{
+    
+} */
+.inOut li{
+    list-style: disc;
+    font-size: 22px;
+    margin: 15px 0 15px 20px;
+}
+.inOut li strong{
+    font-weight: normal;
+}
+/* .attention{
+    margin: 10px 0;
+} */
+
+/* 共通項目 */
+.attention li{
+    margin: 13px 0;
+}
+.attention strong{
+    font-size: 20px;
+}
+.attention li p{
+    font-size: 15px;
+}
+.image{
+    width: calc(100%/2);
+}
+.lazy,.done{
+    width: 100%;
+    background: #211914;
+    object-fit: contain;
+}
+
+/* 鍵の使い方 */
+.key{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 5px;
+    padding: 25px 0px 0;
+    column-gap: 10px;
+}
+.key li{
+    width: calc((100% - 30px) / 4);
+}
+.key li a{
+    display: block;
+    color: #0f0f0f;
+    font-size: 18px;
+    font-weight: bold;
+}
+.key-lazy,.key-done{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background: #211914;
+    /* border: 5px solid #b8815e; */
+}
+.key strong{
+    display: block;
+    margin: 10px 0;
+}
+.number {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.number p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.number a {
+  font-size: 30px;
+  color: #276fdb;
+}
+
+@media(max-width:890px) {
+    .key li{
+        width: calc((100% - 10px)/2);
+    }
+    .card {
+        flex-direction: column-reverse;
+    }
+    .card2{
+        flex-direction: column;
+    }
+    .textList,.image{
+        width: 100%;
+    }
+    .lazy,.done{
+        aspect-ratio: 16/9;
+    }
+    .key-lazy,.key-done {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media(max-width:550px) {
+    .textList{
+        padding: 0px 5px;
+    }
+    .key li a {
+        font-size: 15px;
+    }
+    .inOut li{
+        font-size: 19px;
+    }
+    .side {
+        font-size: 18px;
+    }
+    .attention strong{
+        font-size: 18px;
+    }
+    .attention li {
+        margin: 12px 0;
+    }
+    .key-lazy,.key-done {
+        aspect-ratio: 1/1;
+    }
+}
